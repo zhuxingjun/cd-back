@@ -1,0 +1,23 @@
+debug: true
+logging:
+  level:
+    root: info
+server:
+  port: 8080
+  servlet:
+    context-path: /
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    druid:
+      initial-size: 1
+      max-active: 20
+      min-idle: 1
+      stat-view-servlet:
+        allow: true
+      test-on-borrow: true
+    password: db1
+    url: jdbc:mysql://39.99.242.20:3306/db1?serverTimezone=Asia/Shanghai&characterEncoding=UTF-8&useUnicode=true&useSSL=false
+    username: db1
+  thymeleaf:
+    cache: false
